@@ -309,8 +309,8 @@
     }
     @media print {
     .break {
-        break-after: page; /* modern */
-        page-break-after: always; /* fallback */
+        break-before: page; /* modern */
+        page-break-before: always; /* fallback */
       }
   }
   </style>
@@ -353,7 +353,7 @@
         </div>
 
         <!-- EXPERIENCE -->
-        <div class="section break">
+        <div class="section">
           <h3 class="section-title">Experience</h3>
           <div class="section-line"></div>
 
@@ -409,7 +409,7 @@
       <aside>
 
         <!-- TIMELINE (LATEST FIRST) -->
-        <div class="section">
+        <div class="section break">
           <h3 class="section-title">Key Experiences</h3>
           <div class="section-line"></div>
 
@@ -454,7 +454,7 @@
         </div>
 
         <!-- CERTIFICATIONS -->
-        <div class="section break">
+        <div class="section">
           <h3 class="section-title">Certification</h3>
           <div class="section-line"></div>
 

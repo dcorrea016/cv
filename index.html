@@ -82,10 +82,6 @@
       text-decoration: none;
     }
 
-    .header-meta a:hover {
-      text-decoration: underline;
-    }
-
     .photo-wrapper {
       display: flex;
       justify-content: flex-end;
@@ -165,7 +161,7 @@
       margin-top: 2px;
     }
 
-    /* EDUCATION & LANG */
+    /* EDUCATION */
 
     .edu-title {
       font-weight: 700;
@@ -177,6 +173,8 @@
       color: var(--primary);
       margin-top: 2px;
     }
+
+    /* LANGUAGES */
 
     .lang-level {
       font-size: 13px;
@@ -198,42 +196,48 @@
       background: var(--primary);
     }
 
-    /* RIGHT COLUMN */
+    /* TIMELINE */
 
-    .achievement {
+    .timeline {
+      margin-top: 4px;
+      border-left: 2px solid #dcdce3;
+      padding-left: 9px;
+    }
+
+    .timeline-item {
+      position: relative;
       margin-bottom: 14px;
     }
 
-    .achievement-title {
-      font-weight: 700;
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -15px;
+      top: 3px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .timeline-year {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .timeline-title {
       font-size: 13px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .achievement-icon {
-      font-size: 14px;
-    }
-
-    .achievement-text {
-      font-size: 12px;
-      margin-top: 4px;
-    }
-
-    .cert-item {
-      margin-bottom: 10px;
-    }
-
-    .cert-title {
       font-weight: 700;
-      font-size: 13px;
-    }
-
-    .cert-org {
-      font-size: 12px;
       margin-top: 2px;
-      color: #555;
+    }
+
+    .timeline-text {
+      font-size: 12px;
+      margin-top: 3px;
+      line-height: 1.4;
     }
 
     /* SKILLS */
@@ -267,12 +271,26 @@
       background: #b5b5c0;
     }
 
-    .skills-block + .skills-block {
+      .skills-block + .skills-block {
       margin-top: 12px;
     }
 
     .li{
       margin: 0;
+    }
+
+    .cert-item {
+        margin-bottom: 10px;
+    }
+    .cert-title {
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+    .cert-org {
+        font-size: 12px;
+        margin-top: 2px;
+        color: #555;
     }
 
     /* SMALL SCREENS */
@@ -288,12 +306,10 @@
       .content {
         grid-template-columns: 1fr;
       }
-      body {
-        padding: 12px;
-      }
     }
   </style>
 </head>
+
 <body>
   <div class="page">
     <header class="header">
@@ -302,18 +318,13 @@
         <h2>Manager | PwC Digital Services | PMP® | CSM®</h2>
         <div class="header-meta">
           <span><a href="mailto:diana.correa25a@gmail.com">diana.correa25a@gmail.com</a></span>
-           <span>+971 547933767</span>
-          <span><a href="https://www.linkedin.com/in/diana-correa-535033b2/" target="_blank" rel="noreferrer">linkedin.com/in/diana-correa-535033b2</a></span>
+          <span>+971 547933767</span>
+          <span><a href="https://www.linkedin.com/in/diana-correa-535033b2/" target="_blank">linkedin.com/in/diana-correa-535033b2</a></span>
           <span>United Arab Emirates</span>
-         
         </div>
       </div>
       <div class="photo-wrapper">
-        <!-- Replace background-image URL with your real photo -->
-        <div
-          class="photo"
-          style="background-image:url('/cv/assets/photo.jpg');"
-        ></div>
+        <div class="photo" style="background-image:url('/cv/assets/photo.jpg');"></div>
       </div>
     </header>
 
@@ -328,13 +339,10 @@
             Project Manager | Agile Expert | AI &amp; Digital Delivery
           </p>
           <p class="summary-text">
-            Project Manager with 10+ years of experience leading cross-functional
-            teams to deliver AI solutions, enterprise web platforms, and mobile
-            applications. Skilled in Agile (Scrum), stakeholder management, and
-            end-to-end project delivery. Recent focus includes GenAI
-            initiatives, prompt engineering, and intelligent automation. Strong
-            technical oversight across React/Next.js, iOS/Android apps, and CRM
-            implementations (Dynamics 365, Salesforce). 
+            Project Manager with 10+ years of experience delivering AI solutions,
+            enterprise platforms, and mobile applications. Skilled in Agile delivery,
+            stakeholder management, and leading cross-functional technical teams.
+            Recent focus on GenAI, RAG, LLM integration, and digital automation.
           </p>
         </div>
 
@@ -346,31 +354,31 @@
           <div class="job">
             <div class="job-title">Manager</div>
             <div class="job-company">PwC Middle East</div>
-            <div class="job-meta">10/2023 – Present • Dubai, United Arab Emirates</div>
+            <div class="job-meta">10/2023 – Present • Dubai, UAE</div>
           </div>
 
           <div class="job">
             <div class="job-title">Development Team Lead</div>
             <div class="job-company">PwC Middle East</div>
-            <div class="job-meta">10/2022 – 10/2023 • Dubai, United Arab Emirates</div>
+            <div class="job-meta">10/2022 – 10/2023 • Dubai, UAE</div>
           </div>
 
           <div class="job">
             <div class="job-title">Lead Developer</div>
             <div class="job-company">PwC Middle East</div>
-            <div class="job-meta">01/2020 – 10/2022 • Dubai, United Arab Emirates</div>
+            <div class="job-meta">01/2020 – 10/2022 • Dubai, UAE</div>
           </div>
 
           <div class="job">
             <div class="job-title">Senior Software Developer</div>
             <div class="job-company">PwC Middle East</div>
-            <div class="job-meta">02/2017 – 01/2020 • Dubai, United Arab Emirates</div>
+            <div class="job-meta">02/2017 – 01/2020 • Dubai, UAE</div>
           </div>
 
           <div class="job">
             <div class="job-title">Software Developer</div>
             <div class="job-company">NSI Global</div>
-            <div class="job-meta">03/2015 – 02/2017 • Dubai, United Arab Emirates</div>
+            <div class="job-meta">03/2015 – 02/2017 • Dubai, UAE</div>
           </div>
 
           <div class="job">
@@ -386,7 +394,7 @@
           <div class="section-line"></div>
           <div class="edu-title">Bachelor's degree, Electronics and Communication</div>
           <div class="edu-inst">Visvesvaraya Technological University</div>
-          <div class="job-meta">01/2008 – 12/2012</div>
+          <div class="job-meta">2008 – 2012</div>
         </div>
 
         <!-- LANGUAGES -->
@@ -395,55 +403,57 @@
           <div class="section-line"></div>
           <div class="edu-title">English</div>
           <div class="lang-level">Advanced</div>
-          <div class="lang-bar">
-            <div class="lang-bar-fill"></div>
-          </div>
+          <div class="lang-bar"><div class="lang-bar-fill"></div></div>
         </div>
       </section>
 
       <!-- RIGHT COLUMN -->
       <aside>
-        <!-- KEY ACHIEVEMENTS -->
+
+        <!-- TIMELINE (LATEST FIRST) -->
         <div class="section">
-          <h3 class="section-title">Key Achievements</h3>
+          <h3 class="section-title">Key Experiences</h3>
           <div class="section-line"></div>
 
-          <div class="achievement">
-            <div class="achievement-title">
-              <span class="achievement-icon">◆</span>
-              <span>AI Project Leadership</span>
-            </div>
-            <p class="achievement-text">
-              <li class="achievement-text">Delivered large scale Digital Human AI implementation for tourism industry</li>
-              <li class="achievement-text">Implemented AI-driven service automation for a major UAE government entity</li>
-              <li class="achievement-text">Architecting GenAI/Agentic systems, RAG workflows, and embedding pipelines</li>
-              <li class="achievement-text">Integrating LLMs and APIs (OpenAI, AzureOpenAI) into scalable, cloud-native solutions</li>
-              <li class="achievement-text">Designing vector search solutions using Qdrant and Azure Cosmos DB</li>
-              <li class="achievement-text">Digital Human implementation using Uneeq platform, STT, TTS</li>
-            </p>
-          </div>
+          <div class="timeline">
 
-          
-
-          <div class="achievement">
-            <div class="achievement-title">
-              <span class="achievement-icon">◆</span>
-              <span>CRM System Implementation</span>
+            <div class="timeline-item">
+              <div class="timeline-year">2022 – Present</div>
+              <div class="timeline-title">AI Implementation &amp; Leadership</div>
+              <p class="timeline-text">
+                Managed end-to-end AI delivery: Requirements, Model selection, RAG design,
+                LLM integration, vector search, and deployment. Led AI engineers & developers.
+                Served as Scrum Master and delivered workshops on AI, CRM, and Agile.
+              </p>
             </div>
-            <p class="achievement-text">
-              <li class="achievement-text"> Microsoft dynamics integration with custom portal built in Sitefinity</li>
-              <li class="achievement-text">Salesforce Community cloud portal implementation</li>
-            </p>
-          </div>
 
-          <div class="achievement">
-            <div class="achievement-title">
-              <span class="achievement-icon">◆</span>
-              <span>Mobile App Development</span>
+            <div class="timeline-item">
+              <div class="timeline-year">2015 – 2022</div>
+              <div class="timeline-title">Web Application Development</div>
+              <p class="timeline-text">
+                Designed and delivered enterprise web platforms, translating business
+                requirements into scalable architectures and leading solution design.
+              </p>
             </div>
-            <p class="achievement-text">
-              Developed mobile applications for Android and iOS.
-            </p>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2015 – 2020</div>
+              <div class="timeline-title">CRM (Salesforce &amp; Dynamics)</div>
+              <p class="timeline-text">
+                Implemented Dynamics 365 and Salesforce Community Cloud portals.
+                Delivered training and ensured alignment with business processes.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2013 – 2015</div>
+              <div class="timeline-title">Mobile App Development</div>
+              <p class="timeline-text">
+                Developed mobile apps for iOS and Android, translating requirements
+                into functional and user-centric mobile solutions.
+              </p>
+            </div>
+
           </div>
         </div>
 
@@ -459,12 +469,12 @@
 
           <div class="cert-item">
             <div class="cert-title">Generative AI Overview for Project Managers</div>
-            <div class="cert-org">Project Management Institute</div>
+            <div class="cert-org">PMI</div>
           </div>
 
           <div class="cert-item">
             <div class="cert-title">PMP</div>
-            <div class="cert-org">Project Management Institute (PMI)</div>
+            <div class="cert-org">Project Management Institute</div>
           </div>
 
           <div class="cert-item">
@@ -502,6 +512,7 @@
               <span class="skill-tag">React</span>
               <span class="skill-tag">Next.js</span>
               <span class="skill-tag">Mobile Apps (iOS, Android)</span>
+              <span class="skill-tag">Python</span>
             </div>
           </div>
 
@@ -512,7 +523,9 @@
               <span class="skill-tag">Salesforce</span>
             </div>
           </div>
+
         </div>
+
       </aside>
     </main>
   </div>

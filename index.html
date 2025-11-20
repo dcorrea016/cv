@@ -296,6 +296,9 @@
     /* SMALL SCREENS */
 
     @media (max-width: 900px) {
+      .pa-4{
+        padding-top:50px;
+      }
       .header {
       
         text-align: left;
@@ -306,13 +309,9 @@
       .content {
         grid-template-columns: 1fr;
       }
+      
     }
-      @media print {
-    .break {
-        break-before: page; /* modern */
-        page-break-before: always; /* fallback */
-      }
-  }
+     
   </style>
 </head>
 
@@ -411,7 +410,7 @@
       <aside>
 
         <!-- TIMELINE (LATEST FIRST) -->
-        <div class="section break">
+        <div class="section pa-4">
           <h3 class="section-title">Key Experiences</h3>
           <div class="section-line"></div>
 

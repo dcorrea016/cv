@@ -166,6 +166,7 @@
     .edu-title {
       font-weight: 700;
       font-size: 13px;
+    
     }
 
     .edu-inst {
@@ -307,6 +308,12 @@
         grid-template-columns: 1fr;
       }
     }
+    @media print {
+    .break {
+        break-after: page; /* modern */
+        page-break-after: always; /* fallback */
+      }
+  }
   </style>
 </head>
 
@@ -347,7 +354,7 @@
         </div>
 
         <!-- EXPERIENCE -->
-        <div class="section">
+        <div class="section break">
           <h3 class="section-title">Experience</h3>
           <div class="section-line"></div>
 
@@ -456,7 +463,7 @@
         </div>
 
         <!-- CERTIFICATIONS -->
-        <div class="section">
+        <div class="section break">
           <h3 class="section-title">Certification</h3>
           <div class="section-line"></div>
 
